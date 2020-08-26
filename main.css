@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    font-family: Nunito;
+    font-size: 12px;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    background-color: rgb(26, 26, 27);
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brand {
+    text-align: center;
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+}
+
+form input {
+    width: 90%;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+form button {
+    width: 9%;
+    height: 100%;
+    font-size: 3rem;
+    margin: 0.2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+form ion-icon {
+    width: 100%;
+    /* height: 100%; */
+    margin: -9px;
+    color: rgb(57, 57, 57);
+    cursor: pointer;
+}
+
+.search-result {
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+}
+
+.item .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .title {
+    color: whitesmoke;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.view-button {
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #404041;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    align-self: flex-start;
+    border-radius: 6px;
+}
+
+.item-data {
+    color: whitesmoke;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.container.initial .brand {
+    font-size: 7rem;
+}
+
+.container.initial form {
+    max-width: 800px;
+}
+
+.container.initial form input {
+    padding: 15px;
+    font-size: 3rem;
+}
+
+.morebtn {
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.morebtn ion-icon {
+    margin-left: 10px;
+    margin-bottom: -4px;
+}
+
+.previousbtn ion-icon {
+    margin-right: 5px;
+    margin-bottom: -4px;
+}
+
+.previousbtn {
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.pointer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Hide {
+    display: none;
+}
+
+.countdown {
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.alert {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    background-color: #c08487;
+    border: solid 1px #e21548;
+    color: #616163;
+    /* margin-left: 200px; */
+}
+
+@media (max-width:768px) {
+    .search-result {
+        grid-gap: 10px;
+    }
+
+    .container.initial .brand {
+        font-size: 4rem;
+    }
+
+    .container.initial form {
+        max-width: 400px;
+    }
+
+    .container.initial form input {
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    form button {
+        width: 6%;
+        height: 100%;
+        font-size: 3rem;
+        margin: 0.1px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    form ion-icon {
+        width: 100%;
+        /* height: 100%; */
+        margin: -8px;
+        color: rgb(57, 57, 57);
+        cursor: pointer;
+        font-size: 3rem;
+    }
+
+    .alert {
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        background-color: #ff979f;
+        border: solid 1px #ec2727;
+        color: #616163;
+        /* margin-left: -220px; */
+    }
+}
